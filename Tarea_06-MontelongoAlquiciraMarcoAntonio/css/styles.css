@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: lightsteelblue;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 95%;
+    text-align: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 20px; 
+    margin-bottom: 40px;
+}
+
+.card {
+    height: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: beige;
+}
+
+.content--img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.content--text {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 375px){
+    body {
+        background: #1D4350;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+
+    .container--cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* grid-column-gap: 25px; */
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    body {
+        background: #2196f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f44336, #2196f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f44336, #2196f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .container--cards{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        /* grid-column-gap: 25px; */
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        background: #0099F7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .container--cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* grid-column-gap: 25px; */
+        gap: 15px;
+    }
+}
